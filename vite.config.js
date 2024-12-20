@@ -35,5 +35,10 @@ export default defineConfig({
         laravel([
             'resources/scripts/main.js'
         ])
-    ]
+    ],
+    server: {
+      watch: {
+        ignored: ['**/.env'],
+      },
+    },
 });
